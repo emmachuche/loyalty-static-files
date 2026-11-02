@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Now — Availability — Loyalty Destination Club</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="./style/shared.css">
+  <link rel="stylesheet" href="./style/booking.css">
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body class="">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- COMPONENT: PortalHeader / PortalNavigation / UserMenu -->
+  <header class="portal-header">
+    <div class="portal-header__inner">
+      <button class="header-menu" type="button" aria-label="Toggle menu" aria-controls="portal-nav"
+        aria-expanded="false" data-menu-toggle><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 5h18M3 12h18M3 19h18" />
+        </svg></button>
+      <a class="portal-brand" href="#" data-route="dashboard" aria-label="Loyalty Destination Club"><img
+          src="assets/portal-mark.svg" width="72" height="70" alt="Loyalty Destination Club"></a>
+      <nav class="portal-nav" id="portal-nav" aria-label="Main navigation"><a href="#"
+          data-route="dashboard">Dashboard</a><a href="#" data-route="certificates">My Certificates</a><a href="#"
+          data-route="account">Account Statements</a><a href="#" data-route="reservations">My Reservations</a><a
+          href="#" data-route="booking" aria-current="page">Book Now</a><a href="#" data-route="benefits">Benefits &amp;
+          Perks</a><a href="#" data-route="help">Help Center</a></nav>
+      <div class="header-tools"><button class="language-control" type="button" data-action="language"><svg class="icon"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M2 12h20M12 2a18 18 0 0 1 0 20 18 18 0 0 1 0-20" />
+          </svg> Es</button>
+        <details class="user-menu">
+          <summary><span class="avatar">CM</span><span class="user-name">Carlos</span><svg class="icon"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg></summary>
+          <div class="user-menu__panel">
+            <p>Carlos Mendoza</p><button type="button" data-action="logout">Logout</button>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+  <main class="page booking-page availability-page" id="main">
+    <div class="back-row"><button class="back-link" type="button" data-action="back"><svg class="icon"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <path d="m15 4-8 8 8 8" />
+        </svg>Back to my certificates</button></div><!-- COMPONENT: PageHeading -->
+    <header class="page-heading">
+      <h1>Book Your Stay</h1>
+    </header><!-- COMPONENT: BookingStepper -->
+    <ol class="booking-stepper" aria-label="Booking steps">
+      <li><span>1</span>Search</li>
+      <li class="is-current" aria-current="step"><span>2</span>Availability</li>
+      <li><span>3</span>Cart</li>
+      <li><span>4</span>Guests</li>
+      <li><span>5</span>Check-out</li>
+      <li><span>6</span>Confirmation</li>
+    </ol><!-- COMPONENT: BookingLocation -->
+    <header class="booking-location"><span class="icon-ring"><svg class="icon" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 9c0 6-8 13-8 13S4 15 4 9a8 8 0 1 1 16 0Z" />
+          <circle cx="12" cy="9" r="3" />
+        </svg></span>
+      <div>
+        <h2>Hard Rock Hotel Los Cabos</h2>
+        <p>2026-10-31 ⟶ 2026-11-03 · 3 Nights</p>
+      </div>
+    </header>
+    <section class="panel availability-card" aria-label="Available rooms">
+      <p class="room-label">Room 1 · 2A 0C</p><!-- COMPONENT: AvailableRoom / RoomPaymentChoice -->
+      <article class="available-room">
+        <div class="room-overview"><img src="assets/riviera.webp" alt="Desert View Room resort" width="228"
+            height="180">
+          <div class="room-overview__description">
+            <h3>Desert View Room</h3>
+            <p>Modern room with desert and ocean views</p>
+            <p class="room-bed"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 5v16M22 10v11M2 17h20M2 10h16a4 4 0 0 1 4 4v3M6 10v7M6 13h16" />
+              </svg> King Bed · Max Occupancy: 2</p>
+            <div class="amenities"><span class="pill pill--light">King Bed</span><span
+                class="pill pill--light">Balcony</span><span class="pill pill--light">Mini Bar</span><span
+                class="pill pill--light">WiFi</span></div>
+          </div>
+          <div class="room-rate"><span>Cash rate:</span><strong>$350.00</strong><span>Per night</span><button
+              class="button button--tiny button--deep" type="button" data-action="select-room"><span
+                class="selection-dot"></span> Select</button></div>
+        </div>
+        <section class="room-payment">
+          <h3>How will you pay for this room?</h3>
+          <div class="room-payment__choices"><button type="button" class="choice-pill is-selected"
+              data-action="use-certificate"><span class="choice-dot"></span>Use a certificate</button><button
+              type="button" class="choice-pill" data-action="pay-cash"><span class="choice-dot"></span>Pay cash
+              rate</button></div>
+          <div class="field room-certificate-field"><label for="room-certificate">Select certificate to use for this
+              room</label><select id="room-certificate">
+              <option>Select your certificate</option>
+              <option>PPASS - 000546011</option>
+            </select></div>
+        </section>
+      </article><!-- COMPONENT: AvailableRoom / RoomPaymentChoice -->
+      <article class="available-room">
+        <div class="room-overview"><img src="assets/riviera.webp" alt="Desert View Room resort" width="228"
+            height="180">
+          <div class="room-overview__description">
+            <h3>Desert View Room</h3>
+            <p>Modern room with desert and ocean views</p>
+            <p class="room-bed"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 5v16M22 10v11M2 17h20M2 10h16a4 4 0 0 1 4 4v3M6 10v7M6 13h16" />
+              </svg> King Bed · Max Occupancy: 2</p>
+            <div class="amenities"><span class="pill pill--light">King Bed</span><span
+                class="pill pill--light">Balcony</span><span class="pill pill--light">Mini Bar</span><span
+                class="pill pill--light">WiFi</span></div>
+          </div>
+          <div class="room-rate"><span>Cash rate:</span><strong>$350.00</strong><span>Per night</span><button
+              class="button button--tiny button--deep" type="button" data-action="select-room"><span
+                class="selection-dot"></span> Select</button></div>
+        </div>
+        <section class="room-payment">
+          <h3>How will you pay for this room?</h3>
+          <div class="room-payment__choices"><button type="button" class="choice-pill"
+              data-action="use-certificate"><span class="choice-dot"></span>Use a certificate</button><button
+              type="button" class="choice-pill is-selected" data-action="pay-cash"><span class="choice-dot"></span>Pay
+              cash rate</button></div>
+          <p class="cash-rate-note">Cash-rate room. Not backed by a certificate.</p>
+          <div class="room-subtotal">
+            <p><span>Base room rate (3n x $350.00)</span><span>$1,050.00</span></p>
+            <p><strong>Subtotal</strong><strong>$1,050.00</strong></p>
+          </div>
+        </section>
+      </article><!-- COMPONENT: AvailableRoom / RoomPaymentChoice -->
+      <article class="available-room">
+        <div class="room-overview"><img src="assets/riviera.webp" alt="Desert View Room resort" width="228"
+            height="180">
+          <div class="room-overview__description">
+            <h3>Desert View Room</h3>
+            <p>Modern room with desert and ocean views</p>
+            <p class="room-bed"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 5v16M22 10v11M2 17h20M2 10h16a4 4 0 0 1 4 4v3M6 10v7M6 13h16" />
+              </svg> King Bed · Max Occupancy: 2</p>
+            <div class="amenities"><span class="pill pill--light">King Bed</span><span
+                class="pill pill--light">Balcony</span><span class="pill pill--light">Mini Bar</span><span
+                class="pill pill--light">WiFi</span></div>
+          </div>
+          <div class="room-rate"><span>Cash rate:</span><strong>$350.00</strong><span>Per night</span><button
+              class="button button--tiny button--deep" type="button" data-action="select-room"><span
+                class="selection-dot"></span> Select</button></div>
+        </div>
+      </article><!-- COMPONENT: BookingTotalBar -->
+      <div class="booking-total">
+        <div>
+          <p>Grand total</p><strong>$550.00</strong>
+        </div><button class="button " type="button" data-action="continue-to-cart">Continue to Cart</button>
+      </div>
+    </section>
+  </main>
+  <!-- COMPONENT: PortalFooter -->
+  <footer class="portal-footer"><img src="assets/mark.svg" alt="Loyalty Destination Club" width="57" height="55">
+    <p>2026 Minivac Certificate. All rights reserved.</p>
+    <div>Powered by Valcubity< 2026 Valcubity. All rights reserved.</div>
+  </footer>
+
+</body>
+
+</html>

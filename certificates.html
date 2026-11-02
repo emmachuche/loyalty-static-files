@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Certificates — Loyalty Destination Club</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="./style/shared.css">
+  <link rel="stylesheet" href="./style/certificates.css">
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body class="">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- COMPONENT: PortalHeader / PortalNavigation / UserMenu -->
+  <header class="portal-header">
+    <div class="portal-header__inner">
+      <button class="header-menu" type="button" aria-label="Toggle menu" aria-controls="portal-nav"
+        aria-expanded="false" data-menu-toggle><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 5h18M3 12h18M3 19h18" />
+        </svg></button>
+      <a class="portal-brand" href="#"><img
+          src="assets/portal-mark.svg" width="72" height="70" alt="Loyalty Destination Club"></a>
+      <nav class="portal-nav" id="portal-nav"><a href="#"
+          data-route="dashboard">Dashboard</a><a href="#" data-route="certificates" aria-current="page">My
+          Certificates</a><a href="#">Account Statements</a><a href="#"
+          data-route="reservations">My Reservations</a><a href="#" data-route="booking">Book Now</a><a href="#"
+          data-route="benefits">Benefits &amp; Perks</a><a href="#" data-route="help">Help Center</a></nav>
+      <div class="header-tools"><button class="language-control" type="button" data-action="language"><svg class="icon"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M2 12h20M12 2a18 18 0 0 1 0 20 18 18 0 0 1 0-20" />
+          </svg> Es</button>
+        <details class="user-menu">
+          <summary><span class="avatar">CM</span><span class="user-name">Carlos</span><svg class="icon"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg></summary>
+          <div class="user-menu__panel">
+            <p>Carlos Mendoza</p><button type="button" data-action="logout">Logout</button>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+  <main class="page certificates-page" id="main">
+    <!-- COMPONENT: PageHeading -->
+    <header class="page-heading">
+      <h1>My Certificates</h1>
+    </header>
+    <!-- COMPONENT: SearchampFiltersPanel -->
+    <section class="panel ">
+      <header class="panel-heading">
+        <div class="panel-heading__title"><span class="icon-ring"><svg class="icon" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 3h18l-7 9v9l-4-2v-7L3 3Z" />
+            </svg></span>
+          <h2>Search &amp; Filters</h2>
+        </div>
+      </header><!-- COMPONENT: CertificateFilters -->
+      <div class="filter-grid">
+        <div class="search-field"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="10" cy="10" r="7" />
+            <path d="m15 15 7 7" />
+          </svg><label class="sr-only" for="certificate-search">Search by certificate number</label><input
+            id="certificate-search" placeholder="Search by certificate number"></div><label class="sr-only"
+          for="certificate-status">Status</label><select id="certificate-status">
+          <option>All statuses</option>
+          <option>Expiring soon</option>
+          <option>Balance due</option>
+        </select><label class="sr-only" for="certificate-format">Stay format</label><select id="certificate-format">
+          <option>All stay formats</option>
+          <option>3D &amp; 2N</option>
+          <option>5D &amp; 4N</option>
+        </select><label class="sr-only" for="certificate-expiration">Expiration</label><select
+          id="certificate-expiration">
+          <option>All expirations</option>
+        </select><label class="sr-only" for="certificate-sort">Sort</label><select id="certificate-sort">
+          <option>Sort expiration</option>
+        </select><label class="checkbox-field"><input type="checkbox"> Balance due only</label>
+      </div>
+      <div class="certificate-list"><!-- COMPONENT: CertificateRow -->
+        <article class="certificate-row">
+          <div class="certificate-row__identity">
+            <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">Expiring
+                soon</span><button class="button button--tiny button--deep" type="button">Book now</button></div>
+            <p>Minivan Certificate • 3D &amp; 2N</p>
+            <p class="small">Expires: 2025-12-10 (Expired 132 days ago) Sale: 2024-08-10</p>
+          </div>
+          <dl class="certificate-row__amounts">
+            <div>
+              <dt>Total</dt>
+              <dd>$4,500</dd>
+            </div>
+            <div>
+              <dt>Paid</dt>
+              <dd>$1,800</dd>
+            </div>
+            <div>
+              <dt>Balance</dt>
+              <dd>$2,700</dd>
+            </div>
+          </dl><button class="row-arrow" type="button" data-action="view-certificate" aria-label="View certificate"><svg
+              class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="m9 5 7 7-7 7" />
+            </svg></button>
+        </article><!-- COMPONENT: CertificateRow -->
+        <article class="certificate-row">
+          <div class="certificate-row__identity">
+            <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">Expiring
+                soon</span><button class="button button--tiny button--deep" type="button">Book now</button></div>
+            <p>Minivan Certificate • 3D &amp; 2N</p>
+            <p class="small">Expires: 2025-12-10 (Expired 132 days ago) Sale: 2024-08-10</p>
+          </div>
+          <dl class="certificate-row__amounts">
+            <div>
+              <dt>Total</dt>
+              <dd>$4,500</dd>
+            </div>
+            <div>
+              <dt>Paid</dt>
+              <dd>$1,800</dd>
+            </div>
+            <div>
+              <dt>Balance</dt>
+              <dd>$2,700</dd>
+            </div>
+          </dl><button class="row-arrow" type="button" data-action="view-certificate" aria-label="View certificate"><svg
+              class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="m9 5 7 7-7 7" />
+            </svg></button>
+        </article><!-- COMPONENT: CertificateRow -->
+        <article class="certificate-row">
+          <div class="certificate-row__identity">
+            <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">Expiring
+                soon</span><button class="button button--tiny button--deep" type="button">Book now</button></div>
+            <p>Minivan Certificate • 3D &amp; 2N</p>
+            <p class="small">Expires: 2025-12-10 (Expired 132 days ago) Sale: 2024-08-10</p>
+          </div>
+          <dl class="certificate-row__amounts">
+            <div>
+              <dt>Total</dt>
+              <dd>$4,500</dd>
+            </div>
+            <div>
+              <dt>Paid</dt>
+              <dd>$1,800</dd>
+            </div>
+            <div>
+              <dt>Balance</dt>
+              <dd>$2,700</dd>
+            </div>
+          </dl><button class="row-arrow" type="button" data-action="view-certificate" aria-label="View certificate"><svg
+              class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="m9 5 7 7-7 7" />
+            </svg></button>
+        </article><!-- COMPONENT: CertificateRow -->
+        <article class="certificate-row">
+          <div class="certificate-row__identity">
+            <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">Expiring
+                soon</span><button class="button button--tiny button--deep" type="button">Book now</button></div>
+            <p>Minivan Certificate • 3D &amp; 2N</p>
+            <p class="small">Expires: 2025-12-10 (Expired 132 days ago) Sale: 2024-08-10</p>
+          </div>
+          <dl class="certificate-row__amounts">
+            <div>
+              <dt>Total</dt>
+              <dd>$4,500</dd>
+            </div>
+            <div>
+              <dt>Paid</dt>
+              <dd>$1,800</dd>
+            </div>
+            <div>
+              <dt>Balance</dt>
+              <dd>$2,700</dd>
+            </div>
+          </dl><button class="row-arrow" type="button" data-action="view-certificate" aria-label="View certificate"><svg
+              class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="m9 5 7 7-7 7" />
+            </svg></button>
+        </article><!-- COMPONENT: CertificateRow -->
+        <article class="certificate-row">
+          <div class="certificate-row__identity">
+            <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">Expiring
+                soon</span><button class="button button--tiny button--deep" type="button">Book now</button></div>
+            <p>Minivan Certificate • 3D &amp; 2N</p>
+            <p class="small">Expires: 2025-12-10 (Expired 132 days ago) Sale: 2024-08-10</p>
+          </div>
+          <dl class="certificate-row__amounts">
+            <div>
+              <dt>Total</dt>
+              <dd>$4,500</dd>
+            </div>
+            <div>
+              <dt>Paid</dt>
+              <dd>$1,800</dd>
+            </div>
+            <div>
+              <dt>Balance</dt>
+              <dd>$2,700</dd>
+            </div>
+          </dl><button class="row-arrow" type="button" data-action="view-certificate" aria-label="View certificate"><svg
+              class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="m9 5 7 7-7 7" />
+            </svg></button>
+        </article><!-- COMPONENT: CertificateRow -->
+        <article class="certificate-row">
+          <div class="certificate-row__identity">
+            <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">Expiring
+                soon</span><button class="button button--tiny button--deep" type="button">Book now</button></div>
+            <p>Minivan Certificate • 3D &amp; 2N</p>
+            <p class="small">Expires: 2025-12-10 (Expired 132 days ago) Sale: 2024-08-10</p>
+          </div>
+          <dl class="certificate-row__amounts">
+            <div>
+              <dt>Total</dt>
+              <dd>$4,500</dd>
+            </div>
+            <div>
+              <dt>Paid</dt>
+              <dd>$1,800</dd>
+            </div>
+            <div>
+              <dt>Balance</dt>
+              <dd>$2,700</dd>
+            </div>
+          </dl><button class="row-arrow" type="button" data-action="view-certificate" aria-label="View certificate"><svg
+              class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="m9 5 7 7-7 7" />
+            </svg></button>
+        </article><!-- COMPONENT: CertificateRow -->
+        <article class="certificate-row">
+          <div class="certificate-row__identity">
+            <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">Expiring
+                soon</span><button class="button button--tiny button--deep" type="button">Book now</button></div>
+            <p>Minivan Certificate • 3D &amp; 2N</p>
+            <p class="small">Expires: 2025-12-10 (Expired 132 days ago) Sale: 2024-08-10</p>
+          </div>
+          <dl class="certificate-row__amounts">
+            <div>
+              <dt>Total</dt>
+              <dd>$4,500</dd>
+            </div>
+            <div>
+              <dt>Paid</dt>
+              <dd>$1,800</dd>
+            </div>
+            <div>
+              <dt>Balance</dt>
+              <dd>$2,700</dd>
+            </div>
+          </dl><button class="row-arrow" type="button"><svg
+              class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="m9 5 7 7-7 7" />
+            </svg></button>
+        </article>
+      </div>
+    </section>
+  </main>
+  <!-- COMPONENT: PortalFooter -->
+  <footer class="portal-footer"><img src="assets/mark.svg" width="57" height="55">
+    <p>  2026 Minivac Certificate. All rights reserved.</p>
+    <div>Powered by Valcubity 2026 Valcubity. All rights reserved.</div>
+  </footer>
+
+</body>
+
+</html>

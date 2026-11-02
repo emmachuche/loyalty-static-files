@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Now — Cart — Loyalty Destination Club</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="./style/shared.css">
+  <link rel="stylesheet" href="./style/booking.css">
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body class="">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- COMPONENT: PortalHeader / PortalNavigation / UserMenu -->
+  <header class="portal-header">
+    <div class="portal-header__inner">
+      <button class="header-menu" type="button" aria-label="Toggle menu" aria-controls="portal-nav"
+        aria-expanded="false" data-menu-toggle><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 5h18M3 12h18M3 19h18" />
+        </svg></button>
+      <a class="portal-brand" href="#" data-route="dashboard" aria-label="Loyalty Destination Club"><img
+          src="assets/portal-mark.svg" width="72" height="70" alt="Loyalty Destination Club"></a>
+      <nav class="portal-nav" id="portal-nav" aria-label="Main navigation"><a href="#"
+          data-route="dashboard">Dashboard</a><a href="#" data-route="certificates">My Certificates</a><a href="#"
+          data-route="account">Account Statements</a><a href="#" data-route="reservations">My Reservations</a><a
+          href="#" data-route="booking" aria-current="page">Book Now</a><a href="#" data-route="benefits">Benefits &amp;
+          Perks</a><a href="#" data-route="help">Help Center</a></nav>
+      <div class="header-tools"><button class="language-control" type="button" data-action="language"><svg class="icon"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M2 12h20M12 2a18 18 0 0 1 0 20 18 18 0 0 1 0-20" />
+          </svg> Es</button>
+        <details class="user-menu">
+          <summary><span class="avatar">CM</span><span class="user-name">Carlos</span><svg class="icon"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg></summary>
+          <div class="user-menu__panel">
+            <p>Carlos Mendoza</p><button type="button" data-action="logout">Logout</button>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+  <main class="page booking-page cart-page" id="main">
+    <div class="back-row"><button class="back-link" type="button" data-action="back"><svg class="icon"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <path d="m15 4-8 8 8 8" />
+        </svg>Back to availability</button></div><!-- COMPONENT: PageHeading -->
+    <header class="page-heading">
+      <h1>Book Your Stay</h1>
+    </header><!-- COMPONENT: BookingStepper -->
+    <ol class="booking-stepper" aria-label="Booking steps">
+      <li><span>1</span>Search</li>
+      <li><span>2</span>Availability</li>
+      <li class="is-current" aria-current="step"><span>3</span>Cart</li>
+      <li><span>4</span>Guests</li>
+      <li><span>5</span>Check-out</li>
+      <li><span>6</span>Confirmation</li>
+    </ol><!-- COMPONENT: BookingLocation -->
+    <header class="booking-location"><span class="icon-ring"><svg class="icon" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 9c0 6-8 13-8 13S4 15 4 9a8 8 0 1 1 16 0Z" />
+          <circle cx="12" cy="9" r="3" />
+        </svg></span>
+      <div>
+        <h2>Your Cart</h2>
+        <p>Unico 20° 87° Hotel · 2026-10-31 ⟶ 2026-11-03 · 3 Nights</p>
+      </div>
+    </header>
+    <section class="panel cart-room-card" aria-label="Your room">
+      <p class="room-label">Room 1 · 2A 0C</p>
+      <div class="room-overview"><img src="assets/riviera.webp" alt="Desert View Room resort" width="228" height="180">
+        <div class="room-overview__description">
+          <h3>Desert View Room</h3>
+          <p>2A 0C · 1 King Bed</p>
+          <p>Certificate applied: <strong>PPASS - 000546011</strong></p>
+          <p>Main guest: to be assigned in next step</p>
+        </div>
+        <div class="room-rate"><span>Subtotal</span><strong>$0.00</strong></div>
+      </div>
+      <div class="certificate-coverage"><span>3 nights covered by your certificate</span><strong>Covered by your
+          certificate</strong></div>
+    </section>
+    <p class="air-credit-note">Air Credit from your contract ($500.00) is applied automatically</p>
+    <section class="panel cart-total-card" aria-label="Cart total">
+      <!-- COMPONENT: BookingTotalBar -->
+      <div class="booking-total">
+        <div>
+          <p>Grand total</p><strong>$550.00</strong>
+        </div><button class="button " type="button" data-action="continue-to-guests">Continue to Guests</button>
+      </div>
+    </section>
+  </main>
+  <!-- COMPONENT: PortalFooter -->
+  <footer class="portal-footer"><img src="assets/mark.svg" alt="Loyalty Destination Club" width="57" height="55">
+    <p>  2026 Minivac Certificate. All rights reserved.</p>
+    <div>Powered by Valcubity 2026 Valcubity. All rights reserved.</div>
+  </footer>
+
+</body>
+
+</html>

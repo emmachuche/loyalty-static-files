@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account Statements — Loyalty Destination Club</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="./style/shared.css">
+  <link rel="stylesheet" href="./style/account.css">
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body class="">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Componente: PortalHeader / PortalNavigation / UserMenu -->
+  <header class="portal-header">
+    <div class="portal-header__inner">
+      <button class="header-menu" type="button" aria-label="Toggle menu" aria-controls="portal-nav"
+        aria-expanded="false" data-menu-toggle><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 5h18M3 12h18M3 19h18" />
+        </svg></button>
+      <a class="portal-brand" href="#" data-route="dashboard" aria-label="Loyalty Destination Club"><img
+          src="assets/portal-mark.svg" width="72" height="70" alt="Loyalty Destination Club"></a>
+      <nav class="portal-nav" id="portal-nav" aria-label="Main navigation"><a href="#"
+          data-route="dashboard">Dashboard</a><a href="#" data-route="certificates">My Certificates</a><a href="#"
+          data-route="account" aria-current="page">Account Statements</a><a href="#" data-route="reservations">My
+          Reservations</a><a href="#" data-route="booking">Book Now</a><a href="#" data-route="benefits">Benefits &amp;
+          Perks</a><a href="#" data-route="help">Help Center</a></nav>
+      <div class="header-tools"><button class="language-control" type="button" data-action="language"><svg class="icon"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M2 12h20M12 2a18 18 0 0 1 0 20 18 18 0 0 1 0-20" />
+          </svg> Es</button>
+        <details class="user-menu">
+          <summary><span class="avatar">CM</span><span class="user-name">Carlos</span><svg class="icon"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg></summary>
+          <div class="user-menu__panel">
+            <p>Carlos Mendoza</p><button type="button" data-action="logout">Logout</button>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+  <main class="page account-page" id="main">
+    <!-- Componente: PageHeading -->
+    <header class="page-heading">
+      <h1>Account Statements</h1>
+      <p>Certificate-level accounting: payments, balance and bookable nights.</p>
+    </header>
+    <!-- Componente: SummaryStats / StatCard -->
+    <div class="stats-grid stats-grid--five">
+      <article class="stat-card">
+        <h2><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2v20M17 5H9a3.5 3.5 0 0 0 0 7h6a3.5 3.5 0 0 1 0 7H6" />
+          </svg>Total Paid (YTD)</h2>
+        <p>$95,000</p>
+      </article>
+      <article class="stat-card">
+        <h2><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2v20M17 5H9a3.5 3.5 0 0 0 0 7h6a3.5 3.5 0 0 1 0 7H6" />
+          </svg>Total Balance Due</h2>
+        <p>$23,795</p>
+      </article>
+      <article class="stat-card">
+        <h2><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m4 12 5 5L20 6" />
+          </svg>Nights Ready to Enjoy</h2>
+        <p>53</p>
+      </article>
+      <article class="stat-card">
+        <h2><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="4" y="5" width="16" height="16" rx="1" />
+            <path d="M8 3v4m8-4v4M4 10h16M8 14h3" />
+          </svg>Nights Pending Unlock</h2>
+        <p>20</p>
+      </article>
+      <article class="stat-card">
+        <h2><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="4" y="5" width="16" height="16" rx="1" />
+            <path d="M8 3v4m8-4v4M4 10h16M8 14h3" />
+          </svg>Total Potential Nights</h2>
+        <p>73</p>
+      </article>
+    </div>
+    <!-- Componente: CertificateBreakdownPanel -->
+    <section class="panel account-breakdown">
+      <header class="panel-heading">
+        <div class="panel-heading__title"><span class="icon-ring"><svg class="icon" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 2h8l5 5v15H6V2Zm8 0v6h5M9 12h7m-7 4h7" />
+            </svg></span>
+          <h2>Certificate Breakdown</h2>
+        </div>
+      </header>
+      <div class="table-scroll" role="region" tabindex="0"
+        aria-label="Certificate Number, Stay Format, Status, Total Paid, Balance, Nights Enabled, Nights Pending, &lt;span class=&quot;sr-only&quot;>Action&lt;/span>">
+        <table class="data-table ">
+          <thead>
+            <tr>
+              <th scope="col">Certificate Number</th>
+              <th scope="col">Stay Format</th>
+              <th scope="col">Status</th>
+              <th scope="col">Total Paid</th>
+              <th scope="col">Balance</th>
+              <th scope="col">Nights Enabled</th>
+              <th scope="col">Nights Pending</th>
+              <th scope="col"><span class="sr-only">Action</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--blue">Redeemed</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--red">Expiring soon</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td><button class="button button--tiny button--navy" type="button">Book now</button></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--green">Paid in full</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td><button class="button button--tiny button--navy" type="button">Book now</button></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--gold">Balance due</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td><button class="button button--tiny button--navy" type="button">Complete payment</button></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--blue">Redeemed</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--red">Expiring soon</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td><button class="button button--tiny button--navy" type="button">Book now</button></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--green">Paid in full</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td><button class="button button--tiny button--navy" type="button">Book now</button></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--gold">Balance due</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td><button class="button button--tiny button--navy" type="button">Complete payment</button></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--blue">Redeemed</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--red">Expiring soon</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td><button class="button button--tiny button--navy" type="button">Book now</button></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--green">Paid in full</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td><button class="button button--tiny button--navy" type="button">Book now</button></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--gold">Balance due</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td><button class="button button--tiny button--navy" type="button">Complete payment</button></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--blue">Redeemed</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--red">Expiring soon</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td><button class="button button--tiny button--navy" type="button">Book now</button></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--green">Paid in full</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td><button class="button button--tiny button--navy" type="button">Book now</button></td>
+            </tr>
+            <tr>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td><span class="pill pill--gold">Balance due</span></td>
+              <td>$4,500</td>
+              <td>$0</td>
+              <td>0</td>
+              <td>0</td>
+              <td><button class="button button--tiny button--navy" type="button">Complete payment</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- Componente: TransactionHistoryPanel -->
+    <section class="panel transaction-history">
+      <header class="panel-heading">
+        <div class="panel-heading__title"><span class="icon-ring"><svg class="icon" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 2h8l5 5v15H6V2Zm8 0v6h5M9 12h7m-7 4h7" />
+            </svg></span>
+          <h2>Transaction History</h2>
+        </div>
+      </header>
+      <div class="table-scroll" role="region" tabindex="0"
+        aria-label="Date, Certificate Number, Stay Format, Concept, Type, Amount, Status, Reference">
+        <table class="data-table ">
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Certificate Number</th>
+              <th scope="col">Stay Format</th>
+              <th scope="col">Concept</th>
+              <th scope="col">Type</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Status</th>
+              <th scope="col">Reference</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2026-04-10</td>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td>DP | Certificate Paradise Pass || 3D &amp; 2N || PPASS FULL DOWNPAYMENT</td>
+              <td><span class="pill pill--gold">Downpayment</span></td>
+              <td>$4,500</td>
+              <td>◉ Completed</td>
+              <td>PAY-BAL-12</td>
+            </tr>
+            <tr>
+              <td>2026-04-10</td>
+              <td>PPASS - 000546001</td>
+              <td>8D &amp; 7N</td>
+              <td>Balance | Certificate Paradise Pass || 8D &amp; 7N</td>
+              <td><span class="pill pill--royal">Balance</span></td>
+              <td>$4,500</td>
+              <td>◉ Completed</td>
+              <td>PAY-BAL-12</td>
+            </tr>
+            <tr>
+              <td>2026-04-10</td>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td>Traspaso a Wallet</td>
+              <td><span class="pill pill--sage">Wallet Transfer</span></td>
+              <td>$4,500</td>
+              <td>◉ Completed</td>
+              <td>PAY-BAL-12</td>
+            </tr>
+            <tr>
+              <td>2026-04-10</td>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td>DP | Certificate Paradise Pass || 3D &amp; 2N || PPASS FULL DOWNPAYMENT</td>
+              <td><span class="pill pill--gold">Downpayment</span></td>
+              <td>$4,500</td>
+              <td>◉ Completed</td>
+              <td>PAY-BAL-12</td>
+            </tr>
+            <tr>
+              <td>2026-04-10</td>
+              <td>PPASS - 000546001</td>
+              <td>8D &amp; 7N</td>
+              <td>Balance | Certificate Paradise Pass || 8D &amp; 7N</td>
+              <td><span class="pill pill--royal">Balance</span></td>
+              <td>$4,500</td>
+              <td>◉ Completed</td>
+              <td>PAY-BAL-12</td>
+            </tr>
+            <tr>
+              <td>2026-04-10</td>
+              <td>PPASS - 000546001</td>
+              <td>5D &amp; 4N</td>
+              <td>Traspaso a Wallet</td>
+              <td><span class="pill pill--sage">Wallet Transfer</span></td>
+              <td>$4,500</td>
+              <td>◉ Completed</td>
+              <td>PAY-BAL-12</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <!-- COMPONENT: PortalFooter -->
+  <footer class="portal-footer"><img src="assets/mark.svg" alt="Loyalty Destination Club" width="57" height="55">
+    <p>2026 Minivac Certificate. All rights reserved.</p>
+    <div>Powered by Valcubity 2026 Valcubity. All rights reserved.</div>
+  </footer>
+
+</body>
+
+</html>

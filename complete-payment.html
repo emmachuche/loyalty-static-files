@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Complete Your Certificate Payments — Loyalty Destination Club</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="./style/shared.css">
+  <link rel="stylesheet" href="./style/account.css">
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body class="">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- COMPONENT: PortalHeader / PortalNavigation / UserMenu -->
+  <header class="portal-header">
+    <div class="portal-header__inner">
+      <button class="header-menu" type="button" aria-label="Toggle menu" aria-controls="portal-nav"
+        aria-expanded="false" data-menu-toggle><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 5h18M3 12h18M3 19h18" />
+        </svg></button>
+      <a class="portal-brand" href="#"><img
+          src="assets/portal-mark.svg" width="72" height="70" alt="Loyalty Destination Club"></a>
+      <nav class="portal-nav" id="portal-nav" aria-label="Main navigation"><a href="#"
+          >Dashboard</a><a href="#" data-route="certificates">My Certificates</a><a href="#"
+          aria-current="page">Account Statements</a><a href="#" data-route="reservations">My
+          Reservations</a><a href="#" data-route="booking">Book Now</a><a href="#" data-route="benefits">Benefits &amp;
+          Perks</a><a href="#">Help Center</a></nav>
+      <div class="header-tools"><button class="language-control" type="button" data-action="language"><svg class="icon"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M2 12h20M12 2a18 18 0 0 1 0 20 18 18 0 0 1 0-20" />
+          </svg> Es</button>
+        <details class="user-menu">
+          <summary><span class="avatar">CM</span><span class="user-name">Carlos</span><svg class="icon"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg></summary>
+          <div class="user-menu__panel">
+            <p>Carlos Mendoza</p><button type="button" data-action="logout">Logout</button>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+  <main class="page complete-payment-page" id="main">
+    <div class="back-row"><button class="back-link" type="button" data-action="back"><svg class="icon"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <path d="m15 4-8 8 8 8" />
+        </svg>Back to my certificates</button></div>
+    <!-- COMPONENT: PageHeading -->
+    <header class="page-heading">
+      <h1>Complete Your Certificate Payments</h1>
+      <p>Pay one or more pending certificates in a single checkout and unlock more travel nights.</p>
+    </header>
+    <div class="payment-layout">
+      <div class="payment-layout__main">
+        <!-- COMPONENT: SelectedCertificatesspanclasscountbadge1spanPanel -->
+        <section class="panel ">
+          <header class="panel-heading">
+            <div class="panel-heading__title"><span class="icon-ring"><svg class="icon" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M6 2h8l5 5v15H6V2Zm8 0v6h5M9 12h7m-7 4h7" />
+                </svg></span>
+              <h2>Selected Certificates <span class="count-badge">1</span></h2>
+            </div>
+          </header><!-- COMPONENT: SelectedCertificate -->
+          <article class="selected-certificate">
+            <div>
+              <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--deep">Balance
+                  due</span></div>
+              <p>Certificate Paradise Pass || 5D &amp; 4N || PPASS FULL DOWNPAYMENT</p>
+              <p>Format: <strong>5D &amp; 4N</strong> &nbsp; Expires: <strong>2026-12-01</strong> &nbsp; Paid:
+                <strong>$2,475</strong> &nbsp; Nights to unlock: <strong>4</strong></p>
+            </div>
+            <div class="selected-certificate__amount"><span>BALANCE DUE</span><strong>$2,025</strong><button
+                class="text-button small" type="button" data-action="remove-certificate">♧ Remove</button></div>
+          </article>
+        </section>
+        <!-- COMPONENT: AddMoreCertificatesampUnlockMoreNightsPanel -->
+        <section class="panel ">
+          <header class="panel-heading">
+            <div class="panel-heading__title"><span class="icon-ring"><svg class="icon" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M12 3v18M3 12h18" />
+                </svg></span>
+              <h2>Add More Certificates &amp; Unlock More Nights</h2>
+            </div>
+          </header>
+          <p class="panel-subtitle">You can complete additional certificates in the same payment and travel sooner</p>
+          <div class="additional-certificates"><!-- COMPONENT: AdditionalCertificateRow -->
+            <article class="additional-certificate">
+              <div>
+                <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">5D &amp;
+                    4N</span></div>
+                <p>Balance Due: <strong>$3,600</strong> &nbsp; Nights to unlock: <strong>4</strong> &nbsp; Expires:
+                  <strong>2026-12-01</strong></p>
+              </div><button class="button button--deep button--compact" type="button" data-action="add-to-payment">+ Add
+                to payment</button>
+            </article><!-- COMPONENT: AdditionalCertificateRow -->
+            <article class="additional-certificate">
+              <div>
+                <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">5D &amp;
+                    4N</span></div>
+                <p>Balance Due: <strong>$3,600</strong> &nbsp; Nights to unlock: <strong>4</strong> &nbsp; Expires:
+                  <strong>2026-12-01</strong></p>
+              </div><button class="button button--deep button--compact" type="button" data-action="add-to-payment">+ Add
+                to payment</button>
+            </article><!-- COMPONENT: AdditionalCertificateRow -->
+            <article class="additional-certificate">
+              <div>
+                <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">5D &amp;
+                    4N</span></div>
+                <p>Balance Due: <strong>$3,600</strong> &nbsp; Nights to unlock: <strong>4</strong> &nbsp; Expires:
+                  <strong>2026-12-01</strong></p>
+              </div><button class="button button--deep button--compact" type="button" data-action="add-to-payment">+ Add
+                to payment</button>
+            </article><!-- COMPONENT: AdditionalCertificateRow -->
+            <article class="additional-certificate">
+              <div>
+                <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">5D &amp;
+                    4N</span></div>
+                <p>Balance Due: <strong>$3,600</strong> &nbsp; Nights to unlock: <strong>4</strong> &nbsp; Expires:
+                  <strong>2026-12-01</strong></p>
+              </div><button class="button button--deep button--compact" type="button" data-action="add-to-payment">+ Add
+                to payment</button>
+            </article>
+          </div>
+        </section>
+        <!-- COMPONENT: PaymentMethodPanel -->
+        <section class="panel payment-method-panel">
+          <header class="panel-heading">
+            <div class="panel-heading__title"><span class="icon-ring"><svg class="icon" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <rect x="2" y="5" width="20" height="14" rx="2" />
+                  <path d="M2 10h20" />
+                </svg></span>
+              <h2>Payment Method</h2>
+            </div>
+          </header><!-- COMPONENT: PaymentMethodSelector -->
+          <div class="payment-method-options"><button type="button" class="payment-method-option is-selected"
+              data-action="pay-card"><span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="5" width="20" height="14" rx="2" />
+                  <path d="M2 10h20" />
+                </svg> Pay now with one card</span><small>Charge the full total to a single card</small></button><button
+              type="button" class="payment-method-option" data-action="send-payment-link"><span><svg class="icon"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="m22 2-7 20-4-9-9-4L22 2ZM11 13l6-6" />
+                </svg> Send payment link</span><small>Email or text a secure link to complete payment</small></button>
+          </div>
+          <div class="payment-card-fields"><label class="sr-only" for="card-number">Card number</label><input
+              id="card-number" placeholder="Card number" inputmode="numeric" autocomplete="off"><label class="sr-only"
+              for="card-expiry">Expiry date</label><input id="card-expiry" placeholder="MM/YY" autocomplete="off"><label
+              class="sr-only" for="card-cvv">CVV</label><input id="card-cvv" placeholder="CVV" inputmode="numeric"
+              autocomplete="off"><label class="sr-only" for="card-holder">Cardholder name</label><input id="card-holder"
+              placeholder="Cardholder name" autocomplete="off"></div>
+          <p class="payment-security">Secure tokenized payment - Card details are never stored</p>
+        </section>
+      </div>
+      <aside class="payment-summary panel" aria-labelledby="payment-summary-title">
+        <header class="panel-heading">
+          <div class="panel-heading__title"><span class="icon-ring"><svg class="icon" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M6 2h8l5 5v15H6V2Zm8 0v6h5M9 12h7m-7 4h7" />
+              </svg></span>
+            <h2 id="payment-summary-title">Payment Summary</h2>
+          </div>
+        </header>
+        <dl class="detail-fields ">
+          <div>
+            <dt>Certificates</dt>
+            <dd>1</dd>
+          </div>
+          <div>
+            <dt>Night to unlock</dt>
+            <dd>4</dd>
+          </div>
+        </dl>
+        <div class="payment-total">
+          <dl class="detail-fields ">
+            <div>
+              <dt>Total due now</dt>
+              <dd>$2,025</dd>
+            </div>
+          </dl>
+        </div>
+        <p class="payment-unlock-note">Paying these certificates today will unlock 4 nights<br>for future bookings.</p>
+        <button class="button button--deep button--full" type="button" data-action="pay-now">Pay Now ($2,025)</button>
+        <p class="payment-summary__note">Hotel confirmation requires certificates to be fully paid</p>
+      </aside>
+    </div>
+  </main>
+  <!-- COMPONENT: PortalFooter -->
+  <footer class="portal-footer"><img src="assets/mark.svg" width="57" height="55">
+    <p>  2026 Minivac Certificate. All rights reserved.</p>
+    <div>Powered by Valcubity 2026 Valcubity. All rights reserved.</div>
+  </footer>
+
+</body>
+
+</html>

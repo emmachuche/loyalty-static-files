@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Discover Yalmakan with a Minivac Certificate from Loyalty Destination Club. Explore our destinations and plan your stay.">
+  <title>Loyalty Destination Club — Your Vacation Starts Here</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="./style/home.css">
+
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- COMPONENT: SiteHeader -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#" aria-label="Loyalty Destination Club — Home"><img src="assets/logo.svg"
+          alt="Loyalty Destination Club" width="326" height="55"></a>
+      <a class="button button--nav" href="#booking">Check Availability</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- COMPONENT: VacationHero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__intro">
+        <p class="eyebrow">EXCLUSIVE MEMBER BENEFITS</p>
+        <h1 id="hero-title">Your Vacation Starts Here</h1>
+        <p class="hero__description">Discover Yalmakan with a Minivac Certificate<br class="desktop-break"> from Loyalty
+          Destination Club.</p>
+        <div class="hero__actions">
+          <a class="button button--gold" href="#booking">Check Availability</a>
+          <a class="button button--outline" href="#benefits">Explore your certificate</a>
+        </div>
+      </div>
+
+      <!-- COMPONENT: BookingCard -->
+      <section class="booking-card" id="booking" aria-labelledby="booking-title">
+        <div class="booking-card__heading">
+          <div class="booking-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="4" y="5" width="16" height="16" rx="1" />
+              <path d="M8 3v4m8-4v4M4 10h16M8 14h3" />
+            </svg></div>
+          <div>
+            <h2 id="booking-title">Book a Stay</h2>
+            <p>Search availability, you will select your room, guests and payment in the booking flow.</p>
+          </div>
+        </div>
+        <!-- COMPONENT: BookingFields. Visual layout; no booking service or data submission. -->
+        <div class="booking-fields">
+          <div class="booking-fields__dates">
+            <div class="field"><label for="resort">Select a resort*</label><select id="resort">
+                <option value="">Select a resort*</option>
+                <option value="ava">Ava Resort Cancun</option>
+                <option value="riviera">Hard Rock Hotel Riviera</option>
+                <option value="cabos">Hard Rock Los Cabos</option>
+                <option value="punta-cana">Hard Rock Punta Cana</option>
+                <option value="cancun">Hard Rock Cancun</option>
+                <option value="unico">Unico 27° 80° Hotel</option>
+              </select></div>
+            <div class="field"><label for="checkin">Check-in Date</label>
+              <div class="date-field"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="4" y="5" width="16" height="16" rx="1" />
+                  <path d="M8 3v4m8-4v4M4 10h16M8 14h3" />
+                </svg><input id="checkin" type="text" placeholder="DD/MM/YY" inputmode="numeric" autocomplete="off">
+              </div>
+            </div>
+            <div class="field"><label for="checkout">Check-out Date</label>
+              <div class="date-field"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="4" y="5" width="16" height="16" rx="1" />
+                  <path d="M8 3v4m8-4v4M4 10h16M8 14h3" />
+                </svg><input id="checkout" type="text" placeholder="DD/MM/YY" inputmode="numeric" autocomplete="off">
+              </div>
+            </div>
+          </div>
+          <div class="booking-fields__guests">
+            <div class="field"><label for="adults">Adults</label><input id="adults" type="number" min="1" max="6"
+                value="2"></div>
+            <div class="field"><label for="children">Children</label><input id="children" type="number" min="0" max="4"
+                value="0"></div>
+          </div>
+        </div>
+        <button class="button button--search" type="button" aria-disabled="true"
+          title="Static design — reservations are not connected">Search Availability</button>
+      </section>
+    </section>
+
+    <!-- COMPONENT: CertificateBenefits / BenefitCard -->
+    <section class="benefits" id="benefits" aria-label="Certificate benefits">
+      <div class="benefits__grid">
+        <article class="benefit-card">
+          <div class="benefit-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 8 7 3h10l4 5-9 13L3 8Zm0 0h18M7 3l5 18 5-18M7 3l5 5 5-5" />
+            </svg></div>
+          <h2>Exclusive vacation experience</h2>
+          <p>Enjoy premium resorts and unique moments.</p>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="4" y="5" width="16" height="16" rx="1" />
+              <path d="M8 3v4m8-4v4M4 10h16M8 14h3" />
+            </svg></div>
+          <h2>Flexible travel dates</h2>
+          <p>Plan your Minivac exactly when you want.</p>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m12 3 8 4v6c0 4-8 8-8 8s-8-4-8-8V7l8-4Z" />
+            </svg></div>
+          <h2>Secure reservation</h2>
+          <p>Book with confidence and peace of mind.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMPONENT: DestinationsSection -->
+    <section class="destinations" id="destinations" aria-labelledby="destinations-title">
+      <header class="section-heading">
+        <p class="eyebrow">OUR DESTINATIONS</p>
+        <h2 id="destinations-title">Extraordinary Places Around the World</h2>
+        <p class="section-heading__description">Discover our collection of luxury resorts across Mexico’s most
+          breathtaking locations</p>
+      </header>
+      <div class="destinations__grid">
+        <!-- COMPONENT: DestinationCard -->
+        <a class="destination-card" href="#booking" data-resort="ava" aria-label="Select Ava Resort Cancun">
+          <img src="assets/ava.webp" alt="Ava Resort Cancun" width="478" height="224" loading="lazy">
+          <div class="destination-card__body">
+            <div>
+              <p class="destination-card__country">MEXICO</p>
+              <h3>Ava Resort Cancun</h3>
+            </div><span class="destination-card__arrow"><svg class="icon" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="m9 5 7 7-7 7" />
+              </svg></span>
+          </div>
+        </a>
+        <!-- COMPONENT: DestinationCard -->
+        <a class="destination-card" href="#booking" data-resort="riviera" aria-label="Select Hard Rock Hotel Riviera">
+          <img src="assets/riviera.webp" alt="Hard Rock Hotel Riviera" width="478" height="224" loading="lazy">
+          <div class="destination-card__body">
+            <div>
+              <p class="destination-card__country">MEXICO</p>
+              <h3>Hard Rock Hotel Riviera</h3>
+            </div><span class="destination-card__arrow"><svg class="icon" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="m9 5 7 7-7 7" />
+              </svg></span>
+          </div>
+        </a>
+        <!-- COMPONENT: DestinationCard -->
+        <a class="destination-card" href="#booking" data-resort="cabos" aria-label="Select Hard Rock Los Cabos">
+          <img src="assets/cabos.webp" alt="Hard Rock Los Cabos" width="478" height="224" loading="lazy">
+          <div class="destination-card__body">
+            <div>
+              <p class="destination-card__country">MEXICO</p>
+              <h3>Hard Rock Los Cabos</h3>
+            </div><span class="destination-card__arrow"><svg class="icon" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="m9 5 7 7-7 7" />
+              </svg></span>
+          </div>
+        </a>
+        <!-- COMPONENT: DestinationCard -->
+        <a class="destination-card" href="#booking" data-resort="punta-cana" aria-label="Select Hard Rock Punta Cana">
+          <img src="assets/punta-cana.webp" alt="Hard Rock Punta Cana" width="478" height="224" loading="lazy">
+          <div class="destination-card__body">
+            <div>
+              <p class="destination-card__country">MEXICO</p>
+              <h3>Hard Rock Punta Cana</h3>
+            </div><span class="destination-card__arrow"><svg class="icon" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="m9 5 7 7-7 7" />
+              </svg></span>
+          </div>
+        </a>
+        <!-- COMPONENT: DestinationCard -->
+        <a class="destination-card" href="#booking" data-resort="cancun" aria-label="Select Hard Rock Cancun">
+          <img src="assets/cancun.webp" alt="Hard Rock Cancun" width="478" height="224" loading="lazy">
+          <div class="destination-card__body">
+            <div>
+              <p class="destination-card__country">MEXICO</p>
+              <h3>Hard Rock Cancun</h3>
+            </div><span class="destination-card__arrow"><svg class="icon" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="m9 5 7 7-7 7" />
+              </svg></span>
+          </div>
+        </a>
+        <!-- COMPONENT: DestinationCard -->
+        <a class="destination-card" href="#booking" data-resort="unico" aria-label="Select Unico 27° 80° Hotel">
+          <img src="assets/unico.webp" alt="Unico 27° 80° Hotel" width="478" height="224" loading="lazy">
+          <div class="destination-card__body">
+            <div>
+              <p class="destination-card__country">MEXICO</p>
+              <h3>Unico 27° 80° Hotel</h3>
+            </div><span class="destination-card__arrow"><svg class="icon" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="m9 5 7 7-7 7" />
+              </svg></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- COMPONENT: ContactSection / ContactItem -->
+    <section class="contact" aria-labelledby="contact-title">
+      <div class="contact__inner">
+        <header class="contact__heading">
+          <p class="eyebrow">CONTACT US</p>
+          <h2 id="contact-title">We Are Here To Help</h2>
+          <p>Have questions about your certificate or need assistance?<br>Our team is here to help.</p>
+        </header>
+        <dl class="contact__items">
+          <div class="contact-item">
+            <dt><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m6 3 4 5-3 3c1.5 3 3 4.5 6 6l3-3 5 4c-1 4-4 5-8 3C6 18 3 13 2 7 1.5 4 3 2 6 3Z" />
+              </svg><span>Phone</span></dt>
+            <dd>+1 (800) 555-0199</dd>
+          </div>
+          <div class="contact-item">
+            <dt><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="5" width="20" height="14" rx="1" />
+                <path d="m2 5 10 9L22 5M2 19l7-7m13 7-7-7" />
+              </svg><span>Email</span></dt>
+            <dd>Available through the Help Center</dd>
+          </div>
+          <div class="contact-item">
+            <dt><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 4v8H5" />
+              </svg><span>Hours</span></dt>
+            <dd>Mon – Fri, 9:00 AM – 6:00 PM (EST)</dd>
+          </div>
+          <div class="contact-item">
+            <dt><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 9c0 6-8 13-8 13S4 15 4 9a8 8 0 1 1 16 0Z" />
+                <circle cx="12" cy="9" r="3" />
+              </svg><span>Address</span></dt>
+            <dd>Blvd. Kukulcán Km 14.5, Zona Hotelera, 77500 Cancún, Q.R., Mexico</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <!-- COMPONENT: SiteFooter -->
+  <footer class="site-footer">
+    <img class="site-footer__mark" src="assets/mark.svg" alt="Loyalty Destination Club" width="57" height="55">
+    <p class="site-footer__copyright">  2026 Minivac Certificate. All rights reserved.</p>
+    <div class="site-footer__provider">
+      <p>Powered by Valcubity 2026 Valcubity. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
