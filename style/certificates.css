@@ -1,0 +1,259 @@
+/* My Certificates / CertificateFilters / CertificateList */
+.certificates-page>.panel {
+  padding-bottom: 68px;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px 58px;
+  padding: 0 24px;
+  margin-bottom: 60px;
+}
+
+.filter-grid input,
+.filter-grid select {
+  min-height: 54px;
+  height: 54px;
+  text-align: center;
+}
+
+.filter-grid .sr-only {
+  position: absolute;
+}
+
+.search-field {
+  position: relative;
+}
+
+.search-field>.icon {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.search-field input {
+  padding-left: 52px;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.checkbox-field input {
+  width: 32px;
+  height: 32px;
+  min-height: 32px;
+}
+
+.certificate-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding-inline: 24px;
+}
+
+.certificate-list .certificate-row {
+  min-height: 170px;
+}
+
+/* CertificateDetailHeader / DetailSection / Payments */
+.certificate-detail-page>.back-row {
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 44px;
+  margin-bottom: 58px;
+}
+
+.certificate-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+  padding: 46px 66px;
+}
+
+.certificate-detail-header h1 {
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.certificate-detail-header>div>p {
+  margin-top: 10px;
+}
+
+.certificate-detail-header .button {
+  min-width: 236px;
+}
+
+.detail-grid .panel {
+  min-height: 256px;
+}
+
+.detail-grid .panel:nth-child(n+3) {
+  min-height: 352px;
+}
+
+.detail-grid .panel-heading {
+  margin-bottom: 32px;
+}
+
+.detail-fields--compact dt {
+  flex-shrink: 0;
+}
+
+.payments-panel {
+  margin-top: 44px;
+  padding-bottom: 64px;
+}
+
+.payments-panel .data-table {
+  margin-top: 24px;
+}
+
+.payments-panel .data-table td {
+  padding-block: 28px;
+}
+
+.payments-panel .data-table td:nth-child(2) {
+  max-width: 600px;
+}
+
+@media (max-width: 1599px) {
+  .filter-grid {
+    gap: 22px 30px;
+    padding-inline: 16px;
+  }
+
+  .certificate-list {
+    padding-inline: 16px;
+  }
+
+  .certificate-list .certificate-row {
+    min-height: 145px;
+  }
+
+  .certificate-detail-header {
+    padding: 36px 48px;
+  }
+
+  .certificate-detail-header h1 {
+    font-size: 20px;
+  }
+
+  .detail-grid .panel {
+    min-height: 220px;
+  }
+
+  .detail-grid .panel:nth-child(n+3) {
+    min-height: 310px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .filter-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .certificate-detail-header {
+    align-items: flex-start;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-grid .panel,
+  .detail-grid .panel:nth-child(n+3) {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .certificates-page>.panel {
+    padding-bottom: 24px;
+  }
+
+  .filter-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin-bottom: 28px;
+    gap: 14px;
+  }
+
+  .filter-grid input,
+  .filter-grid select {
+    height: 48px;
+    min-height: 48px;
+  }
+
+  .search-field>.icon {
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 16px;
+  }
+
+  .checkbox-field {
+    font-size: 12px;
+    gap: 16px;
+    justify-content: flex-start;
+    padding: 8px 4px;
+  }
+
+  .checkbox-field input {
+    width: 24px;
+    height: 24px;
+    min-height: 24px;
+  }
+
+  .certificate-list {
+    padding: 0;
+    gap: 16px;
+  }
+
+  .certificate-list .certificate-row {
+    min-height: 0;
+  }
+
+  .certificate-detail-page>.back-row {
+    padding-bottom: 24px;
+    margin-bottom: 28px;
+  }
+
+  .certificate-detail-header {
+    flex-direction: column;
+    padding: 28px 24px;
+    margin-bottom: 24px;
+  }
+
+  .certificate-detail-header h1 {
+    font-size: 18px;
+  }
+
+  .certificate-detail-header .button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .certificate-detail-header>div>p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .detail-grid .panel-heading {
+    margin-bottom: 24px;
+  }
+
+  .payments-panel {
+    margin-top: 24px;
+    padding-bottom: 28px;
+  }
+}

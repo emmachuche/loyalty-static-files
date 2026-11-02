@@ -1,0 +1,309 @@
+/* Dashboard section layout */
+.dashboard-page>.panel {
+  margin-top: 28px;
+}
+
+.dashboard-page .summary-section {
+  margin-bottom: 44px;
+}
+
+.dashboard-page .section-title {
+  margin-left: 48px;
+}
+
+.certificate-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 0 24px 38px;
+}
+
+.dashboard-summaries {
+  margin-top: 28px;
+}
+
+.dashboard-summaries .panel {
+  padding-bottom: 52px;
+}
+
+.dashboard-summaries .detail-fields {
+  margin: 0 48px;
+}
+
+.reservation-totals {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 50px 0;
+  text-align: center;
+}
+
+.reservation-totals strong {
+  display: block;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.reservation-totals span {
+  display: block;
+  font-size: 16px;
+}
+
+.dashboard-summaries .panel-actions {
+  margin-left: 56px;
+}
+
+/* PerkGrid / PerkCard */
+.perk-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px 26px;
+}
+
+.perk-card {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  min-height: 102px;
+  padding: 22px 26px;
+  border: 1px solid #dedede;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.perk-card>span {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gold);
+  color: #fff;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.perk-card>span .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.perk-card h3 {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .025em;
+}
+
+.perk-card p {
+  margin-top: 4px;
+  font-size: 16px;
+  letter-spacing: .025em;
+}
+
+/* Booking and newsletter panels */
+.dashboard-page .dashboard-booking {
+  margin-top: 36px;
+  padding-bottom: 64px;
+}
+
+.dashboard-booking .booking-fields {
+  margin-inline: -8px;
+}
+
+.dashboard-booking input,
+.dashboard-booking select {
+  min-height: 54px;
+  height: 54px;
+}
+
+.dashboard-booking .booking-fields__dates {
+  gap: 50px;
+}
+
+.dashboard-booking .booking-fields__guests {
+  margin-top: 28px;
+}
+
+.dashboard-booking .booking-fields .button--search {
+  width: 68%;
+}
+
+.dashboard-page .newsletter {
+  margin-top: 44px;
+  padding-bottom: 64px;
+}
+
+.newsletter-fields {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin: 0 44px;
+}
+
+.newsletter-fields input {
+  text-align: center;
+  min-height: 80px;
+}
+
+.newsletter-fields .button {
+  min-width: 228px;
+}
+
+@media (max-width: 1599px) {
+  .certificate-preview {
+    padding: 0 16px 24px;
+    gap: 22px;
+  }
+
+  .dashboard-summaries .detail-fields {
+    margin-inline: 24px;
+  }
+
+  .dashboard-summaries .panel-actions {
+    margin-left: 24px;
+  }
+
+  .perk-card {
+    gap: 18px;
+    padding: 18px 20px;
+  }
+
+  .perk-card h3 {
+    font-size: 15px;
+  }
+
+  .perk-card p {
+    font-size: 13px;
+  }
+
+  .perk-grid {
+    gap: 20px;
+  }
+
+  .newsletter-fields {
+    margin-inline: 24px;
+    gap: 24px;
+  }
+
+  .newsletter-fields input {
+    min-height: 64px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .perk-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .reservation-totals {
+    padding-inline: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .dashboard-page .section-title {
+    margin-left: 8px;
+  }
+
+  .dashboard-page .summary-section {
+    margin-bottom: 28px;
+  }
+
+  .certificate-preview {
+    padding: 0;
+    gap: 16px;
+  }
+
+  .dashboard-page>.panel {
+    margin-top: 24px;
+  }
+
+  .dashboard-summaries {
+    margin-top: 24px;
+  }
+
+  .dashboard-summaries .panel {
+    padding-bottom: 28px;
+  }
+
+  .dashboard-summaries .detail-fields {
+    margin-inline: 0;
+  }
+
+  .dashboard-summaries .panel-actions {
+    margin: 28px 0 0;
+  }
+
+  .reservation-totals {
+    padding-top: 0;
+  }
+
+  .reservation-totals strong {
+    font-size: 40px;
+  }
+
+  .reservation-totals span {
+    font-size: 12px;
+  }
+
+  .perk-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .perk-card {
+    min-height: 84px;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .perk-card>span {
+    width: 44px;
+    height: 44px;
+  }
+
+  .perk-card h3 {
+    font-size: 13px;
+  }
+
+  .perk-card p {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .dashboard-page .dashboard-booking {
+    padding-bottom: 28px;
+  }
+
+  .dashboard-booking .booking-fields {
+    margin-inline: 0;
+  }
+
+  .dashboard-booking .booking-fields__dates {
+    gap: 20px 14px;
+  }
+
+  .dashboard-booking .booking-fields .button--search {
+    width: 100%;
+  }
+
+  .dashboard-page .newsletter {
+    padding-bottom: 28px;
+  }
+
+  .newsletter-fields {
+    margin: 0;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .newsletter-fields input {
+    min-height: 48px;
+  }
+
+  .newsletter-fields .button {
+    min-width: 0;
+    width: 100%;
+  }
+}

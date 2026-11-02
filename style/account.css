@@ -1,0 +1,529 @@
+/* AccountStatements / CertificateBreakdown / TransactionHistory */
+.account-page .page-heading {
+  margin-bottom: 52px;
+}
+
+.account-page .stats-grid {
+  margin-bottom: 54px;
+}
+
+.account-breakdown {
+  padding-bottom: 44px;
+}
+
+.account-breakdown .panel-heading {
+  margin-bottom: 42px;
+}
+
+.account-breakdown .table-scroll {
+  padding-inline: 44px;
+}
+
+.account-breakdown .data-table td {
+  height: 78px;
+  padding-block: 12px;
+}
+
+.account-breakdown .data-table .button--tiny {
+  min-height: 40px;
+  font-size: 16px;
+  padding-inline: 24px;
+}
+
+.transaction-history {
+  margin-top: 44px;
+  padding-bottom: 44px;
+}
+
+.transaction-history .panel-heading {
+  margin-bottom: 40px;
+}
+
+.transaction-history .table-scroll {
+  padding-inline: 36px;
+}
+
+.transaction-history .data-table {
+  font-size: 12px;
+}
+
+.transaction-history .data-table th {
+  font-size: 12px;
+}
+
+.transaction-history .data-table td {
+  height: 80px;
+  padding-block: 20px;
+}
+
+.transaction-history .data-table td:nth-child(4) {
+  min-width: 350px;
+}
+
+.transaction-history .data-table td .pill {
+  min-width: 140px;
+  font-size: 14px;
+}
+
+/* CompletePayment / SelectedCertificate / AdditionalCertificateRow */
+.complete-payment-page>.back-row {
+  margin-bottom: 42px;
+}
+
+.complete-payment-page>.page-heading {
+  margin-bottom: 48px;
+}
+
+.payment-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 980px) minmax(0, 648px);
+  gap: 28px;
+  align-items: start;
+  margin-inline: 12px -28px;
+}
+
+.payment-layout__main {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-width: 0;
+}
+
+.payment-layout .panel {
+  border-radius: 12px;
+  padding: 32px 34px;
+}
+
+.payment-layout .panel-heading {
+  margin-bottom: 30px;
+}
+
+.payment-layout .panel-heading__title {
+  gap: 24px;
+}
+
+.payment-layout .panel-heading h2 {
+  font-size: 36px;
+}
+
+.payment-layout .panel-subtitle {
+  margin: -28px 0 36px 90px;
+  font-size: 18px;
+}
+
+.count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 22px;
+  border-radius: 50%;
+  background: #345d65;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.selected-certificate {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 10px 16px;
+}
+
+.selected-certificate>div:first-child {
+  min-width: 0;
+  flex: 1;
+}
+
+.selected-certificate p {
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: .02em;
+}
+
+.selected-certificate__amount {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.selected-certificate__amount>span {
+  font-size: 14px;
+}
+
+.selected-certificate__amount>strong {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.selected-certificate__amount .text-button {
+  margin-top: 8px;
+}
+
+.additional-certificates {
+  padding: 0 12px;
+}
+
+.additional-certificate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 130px;
+  padding-block: 28px;
+  border-bottom: 1px solid #aaa;
+}
+
+.additional-certificate:last-child {
+  border-bottom: 0;
+}
+
+.additional-certificate .certificate-line .pill {
+  min-width: 120px;
+}
+
+.additional-certificate p {
+  margin-top: 14px;
+  font-size: 16px;
+}
+
+.additional-certificate>.button {
+  flex-shrink: 0;
+}
+
+/* PaymentSummary */
+.payment-summary .detail-fields {
+  margin-inline: 40px;
+}
+
+.payment-total {
+  margin: 30px 12px;
+  padding-top: 24px;
+  border-top: 1px solid #aaa;
+}
+
+.payment-total .detail-fields {
+  margin-inline: 28px;
+}
+
+.payment-unlock-note {
+  padding: 24px 12px;
+  margin: 0 12px 16px;
+  border-radius: 12px;
+  background: #e8eded;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.payment-summary>.button {
+  width: calc(100% - 24px);
+  margin-inline: 12px;
+}
+
+.payment-summary__note {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* PaymentMethodSelector / PaymentCardFields */
+.payment-method-panel {
+  margin-top: 4px;
+}
+
+.payment-method-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 48px 18px 20px;
+}
+
+.payment-method-option {
+  padding: 24px 26px;
+  border: 1px solid var(--field-border);
+  border-radius: 10px;
+  background: #fff;
+  text-align: left;
+  color: var(--deep);
+}
+
+.payment-method-option.is-selected {
+  background: #e6eded;
+}
+
+.payment-method-option>span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+}
+
+.payment-method-option .icon {
+  width: 22px;
+  height: 22px;
+}
+
+.payment-method-option small {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.payment-card-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 8px;
+  margin-inline: 18px;
+}
+
+.payment-security {
+  margin: 32px 18px 8px;
+  text-align: center;
+  color: var(--navy);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 1599px) {
+
+  .account-breakdown .table-scroll,
+  .transaction-history .table-scroll {
+    padding-inline: 20px;
+  }
+
+  .account-breakdown .data-table td {
+    height: 62px;
+  }
+
+  .account-breakdown .data-table .button--tiny {
+    min-height: 32px;
+    font-size: 12px;
+    padding-inline: 20px;
+  }
+
+  .transaction-history .data-table td {
+    height: 64px;
+  }
+
+  .transaction-history .data-table td .pill {
+    font-size: 11px;
+    min-width: 110px;
+  }
+
+  .payment-layout {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    margin-inline: 0;
+    gap: 24px;
+  }
+
+  .payment-layout .panel {
+    padding: 28px;
+  }
+
+  .payment-layout .panel-heading h2 {
+    font-size: 28px;
+  }
+
+  .payment-layout .panel-heading__title {
+    gap: 16px;
+  }
+
+  .payment-layout .panel-subtitle {
+    margin-left: 70px;
+    font-size: 14px;
+  }
+
+  .selected-certificate {
+    padding-inline: 0;
+  }
+
+  .selected-certificate p,
+  .additional-certificate p {
+    font-size: 12px;
+  }
+
+  .selected-certificate__amount>span {
+    font-size: 11px;
+  }
+
+  .selected-certificate__amount>strong {
+    font-size: 28px;
+  }
+
+  .additional-certificates {
+    padding-inline: 0;
+  }
+
+  .additional-certificate {
+    flex-wrap: wrap;
+    padding-block: 24px;
+  }
+
+  .payment-summary .detail-fields {
+    margin-inline: 12px;
+  }
+
+  .payment-unlock-note {
+    font-size: 13px;
+  }
+
+  .payment-summary__note {
+    font-size: 11px;
+  }
+
+  .payment-method-options {
+    margin: 32px 0 20px;
+  }
+
+  .payment-method-option {
+    padding: 18px 16px;
+  }
+
+  .payment-method-option>span {
+    font-size: 13px;
+  }
+
+  .payment-method-option small {
+    font-size: 11px;
+  }
+
+  .payment-card-fields {
+    margin-inline: 0;
+  }
+
+  .payment-security {
+    font-size: 12px;
+    margin-inline: 0;
+  }
+}
+
+@media (max-width: 1099px) {
+  .payment-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-summary {
+    max-width: 100%;
+  }
+
+  .account-breakdown .table-scroll,
+  .transaction-history .table-scroll {
+    padding-inline: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .account-page .stats-grid {
+    margin-bottom: 28px;
+  }
+
+  .account-breakdown,
+  .transaction-history {
+    padding-bottom: 24px;
+  }
+
+  .transaction-history {
+    margin-top: 24px;
+  }
+
+  .account-breakdown .panel-heading,
+  .transaction-history .panel-heading {
+    margin-bottom: 20px;
+  }
+
+  .complete-payment-page>.back-row {
+    margin-bottom: 28px;
+  }
+
+  .complete-payment-page>.page-heading {
+    margin-bottom: 28px;
+  }
+
+  .payment-layout .panel {
+    padding: 24px 20px;
+    border-radius: 24px;
+  }
+
+  .payment-layout .panel-heading h2 {
+    font-size: 26px;
+  }
+
+  .payment-layout .panel-heading__title {
+    gap: 12px;
+  }
+
+  .payment-layout .panel-subtitle {
+    margin: -14px 0 24px 56px;
+    font-size: 11px;
+  }
+
+  .count-badge {
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+    font-size: 12px;
+  }
+
+  .selected-certificate {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .selected-certificate__amount {
+    align-items: flex-start;
+  }
+
+  .selected-certificate p,
+  .additional-certificate p {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .additional-certificate .certificate-line .pill {
+    min-width: 90px;
+  }
+
+  .additional-certificate>.button {
+    width: 100%;
+  }
+
+  .payment-summary .detail-fields {
+    margin-inline: 0;
+  }
+
+  .payment-unlock-note {
+    margin-inline: 0;
+    font-size: 11px;
+  }
+
+  .payment-summary>.button {
+    width: 100%;
+    margin: 0;
+  }
+
+  .payment-summary__note {
+    line-height: 1.6;
+  }
+
+  .payment-method-options {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .payment-card-fields {
+    gap: 14px 12px;
+  }
+
+  .payment-security {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+}

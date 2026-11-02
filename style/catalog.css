@@ -1,0 +1,77 @@
+/* Review index only; this page is not part of the Adobe XD product design. */
+.catalog-page .page {
+    padding-block: 56px;
+    max-width: 1280px;
+}
+
+.catalog-logo {
+    width: 326px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.catalog-page h1 {
+    font-size: 52px;
+    margin-bottom: 12px;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.catalog-card {
+    min-width: 0;
+    padding: 28px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: var(--shadow);
+}
+
+.catalog-card>span {
+    color: var(--gold);
+    font-size: 14px;
+}
+
+.catalog-card h2 {
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.catalog-card code {
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+.catalog-card:hover {
+    border-color: var(--gold);
+}
+
+.catalog-note {
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+@media (max-width: 899px) {
+    .catalog-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 599px) {
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-page h1 {
+        font-size: 40px;
+    }
+
+    .catalog-logo {
+        width: 260px;
+    }
+}
