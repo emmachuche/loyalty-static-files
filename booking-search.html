@@ -24,11 +24,15 @@
         </svg></button>
       <a class="portal-brand" href="#" data-route="dashboard" aria-label="Loyalty Destination Club"><img
           src="assets/portal-mark.svg" width="72" height="70" alt="Loyalty Destination Club"></a>
-      <nav class="portal-nav" id="portal-nav" aria-label="Main navigation"><a href="#"
-          data-route="dashboard">Dashboard</a><a href="#" data-route="certificates">My Certificates</a><a href="#"
-          data-route="account">Account Statements</a><a href="#" data-route="reservations">My Reservations</a><a
-          href="#" data-route="booking" aria-current="page">Book Now</a><a href="#" data-route="benefits">Benefits &amp;
-          Perks</a><a href="#" data-route="help">Help Center</a></nav>
+      <nav class="portal-nav" id="portal-nav" aria-label="Main navigation">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="certificates.html">My Certificates</a>
+        <a href="account.html">Account Statements</a>
+        <a href="reservations.html">My Reservations</a>
+        <a href="#" aria-current="page">Book Now</a>
+        <a href="#">Benefits &amp; Perks</a>
+        <a href="#">Help Center</a>
+      </nav>
       <div class="header-tools"><button class="language-control" type="button" data-action="language"><svg class="icon"
             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">
@@ -78,7 +82,7 @@
               placeholder="" value="2" min="1"></div>
           <div class="field"><label for="search-children">Children</label><input id="search-children" type="number"
               placeholder="" value="0" min="0"></div>
-        </div><button class="button button--search" type="button" data-action="search-availability">Search
+        </div><button class="button button--search" type="button" data-action="search-availability" onclick="searchAvailibity()">Search
           Availability</button>
       </div>
       <p class="booking-search-hint">One room per booking, fulfilled by one certificate. Select your dates and occupancy

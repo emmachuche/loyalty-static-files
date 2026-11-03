@@ -49,7 +49,7 @@
     </div>
   </header>
   <main class="page booking-page availability-page" id="main">
-    <div class="back-row"><button class="back-link" type="button" data-action="back"><svg class="icon"
+    <div class="back-row"><button class="back-link" type="button" onclick="search()"><svg class="icon"
           viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
           stroke-linejoin="round" aria-hidden="true">
           <path d="m15 4-8 8 8 8" />
@@ -58,7 +58,7 @@
       <h1>Book Your Stay</h1>
     </header><!-- COMPONENT: BookingStepper -->
     <ol class="booking-stepper" aria-label="Booking steps">
-      <li><span>1</span>Search</li>
+      <li onclick="search()"><span>1</span>Search</li>
       <li class="is-current" aria-current="step"><span>2</span>Availability</li>
       <li><span>3</span>Cart</li>
       <li><span>4</span>Guests</li>
