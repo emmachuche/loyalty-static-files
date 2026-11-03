@@ -48,3 +48,15 @@ function searchAvailibity(){
 function search(){
    window.location.href = 'booking-search.html';
 }
+
+function goHome(){
+  window.location.href = 'index.html';
+}
+
+function goCart(){
+  window.location.href = 'booking-cart.html';
+}
+
+function goGuest(){
+  window.location.href = 'booking-cart.html';
+}
