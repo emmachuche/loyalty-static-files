@@ -22,13 +22,17 @@
           stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M3 5h18M3 12h18M3 19h18" />
         </svg></button>
-      <a class="portal-brand" href="#"><img
+      <a class="portal-brand" href="index.html"><img
           src="assets/portal-mark.svg" width="72" height="70" alt="Loyalty Destination Club"></a>
-      <nav class="portal-nav" id="portal-nav" aria-label="Main navigation"><a href="#" data-route="dashboard"
-          aria-current="page">Dashboard</a><a href="#" data-route="certificates">My Certificates</a><a href="#"
-          data-route="account">Account Statements</a><a href="#" data-route="reservations">My Reservations</a><a
-          href="#" data-route="booking">Book Now</a><a href="#" data-route="benefits">Benefits &amp; Perks</a><a
-          href="#" data-route="help">Help Center</a></nav>
+      <nav class="portal-nav" id="portal-nav" aria-label="Main navigation">
+        <a href="#" aria-current="page">Dashboard</a>
+        <a href="certificates.html">My Certificates</a>
+        <a href="account.html">Account Statements</a>
+        <a href="reservations.html">My Reservations</a>
+        <a href="booking-search.html">Book Now</a>
+        <a href="#">Benefits &amp; Perks</a>
+        <a href="#">Help Center</a>
+      </nav>
       <div class="header-tools"><button class="language-control" type="button" ><svg class="icon"
             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">
@@ -118,59 +122,25 @@
             <path d="m9 5 7 7-7 7" />
           </svg></button>
       </header>
-      <div class="certificate-preview"><!-- COMPONENT: CertificateRow -->
-        <article class="certificate-row">
-          <div class="certificate-row__identity">
-            <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">Expiring
-                soon</span><button class="button button--tiny button--deep" type="button">Book now</button></div>
-            <p>3D &amp; 2N • Expires: 2026-05-01 (10 days)</p>
-          </div>
-          <div class="certificate-row__balance"><span>BALANCE</span><strong>$0</strong></div><button class="row-arrow"
-            type="button" data-action="view-certificate" aria-label="View certificate"><svg class="icon"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-              stroke-linejoin="round" aria-hidden="true">
-              <path d="m9 5 7 7-7 7" />
-            </svg></button>
-        </article><!-- COMPONENT: CertificateRow -->
-        <article class="certificate-row">
-          <div class="certificate-row__identity">
-            <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">Expiring
-                soon</span><button class="button button--tiny button--deep" type="button">Book now</button></div>
-            <p>3D &amp; 2N • Expires: 2026-05-01 (10 days)</p>
-          </div>
-          <div class="certificate-row__balance"><span>BALANCE</span><strong>$0</strong></div><button class="row-arrow"
-            type="button" data-action="view-certificate" aria-label="View certificate"><svg class="icon"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-              stroke-linejoin="round" aria-hidden="true">
-              <path d="m9 5 7 7-7 7" />
-            </svg></button>
-        </article><!-- COMPONENT: CertificateRow -->
-        <article class="certificate-row">
-          <div class="certificate-row__identity">
-            <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">Balance
-                due</span><button class="button button--tiny button--gold" type="button">Pay balance</button></div>
-            <p>3D &amp; 2N • Expires: 2026-05-01 (10 days)</p>
-          </div>
-          <div class="certificate-row__balance"><span>BALANCE</span><strong>$0</strong></div><button class="row-arrow"
-            type="button" data-action="view-certificate" aria-label="View certificate"><svg class="icon"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-              stroke-linejoin="round" aria-hidden="true">
-              <path d="m9 5 7 7-7 7" />
-            </svg></button>
-        </article><!-- COMPONENT: CertificateRow -->
-        <article class="certificate-row">
-          <div class="certificate-row__identity">
-            <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">Balance
-                due</span><button class="button button--tiny button--gold" type="button">Pay balance</button></div>
-            <p>3D &amp; 2N • Expires: 2026-05-01 (10 days)</p>
-          </div>
-          <div class="certificate-row__balance"><span>BALANCE</span><strong>$0</strong></div><button class="row-arrow"
-            type="button" data-action="view-certificate" aria-label="View certificate"><svg class="icon"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-              stroke-linejoin="round" aria-hidden="true">
-              <path d="m9 5 7 7-7 7" />
-            </svg></button>
-        </article>
+      <div class="certificate-preview">
+        <!-- COMPONENT: CertificateRow -->
+        <a href="certificate.html">
+          <article class="certificate-row">
+        
+            <div class="certificate-row__identity">
+              <div class="certificate-line"><strong>PPASS - 000546055</strong><span class="pill pill--teal">Expiring
+                  soon</span><button class="button button--tiny button--deep" type="button">Book now</button></div>
+              <p>3D &amp; 2N • Expires: 2026-05-01 (10 days)</p>
+            </div>
+            <div class="certificate-row__balance"><span>BALANCE</span><strong>$0</strong></div><button class="row-arrow"
+              type="button" data-action="view-certificate" aria-label="View certificate"><svg class="icon" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="m9 5 7 7-7 7" />
+              </svg></button>
+        
+          </article>
+        </a>
       </div>
     </section>
     <div class="two-columns dashboard-summaries">

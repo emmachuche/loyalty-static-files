@@ -454,4 +454,16 @@
   .reservation-tags .pill {
     padding: 10px 16px;
   }
+
+.reservation-modal-backdrop {
+  display: none !important;
+}
+
+.reservation-modal-backdrop.is-open {
+  display: flex !important;
+}
+
+body.modal-is-open {
+  overflow: hidden;
+}
 }

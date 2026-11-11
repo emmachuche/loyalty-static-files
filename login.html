@@ -16,7 +16,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- COMPONENT: LoginNavigation -->
-  <nav class="login-navigation"><button class="button button--outline" type="button" data-action="home">Back to
+  <nav class="login-navigation"><button onclick="goHome()" class="button button--outline" type="button" data-action="home">Back to
       home</button><button type="button" class="login-languages" data-action="language">En | Es</button></nav>
   <main class="login-main" id="main">
     <!-- COMPONENT: LoginCard -->
@@ -29,13 +29,32 @@
         <div class="field"><label for="login-email">Email address</label><input id="login-email" type="email"
             placeholder="Email" autocomplete="email"></div>
         <div class="field"><label for="login-password">Password</label><input id="login-password" type="password"
-            placeholder="**********" autocomplete="current-password"></div><button class="button " type="button"
-          data-action="sign-in">Sign-in</button><button type="button" class="forgot-password"
+            placeholder="**********" autocomplete="current-password"></div>
+            
+            <a href="dashboard.html" class="button " type="button">Sign-in</a>
+          <button type="button" class="forgot-password"
           data-action="forgot-password">Forgot Password?</button>
       </div>
     </section>
   </main>
-  <footer class="login-footer">Powered by Valcubity 2026 Valcubity. All rights reserved.</footer>
+  
+  <footer class="login-footer">
+    <nav class="login-footer-enlaces" aria-label="Información legal">
+      <a href="#">Términos de uso</a>
+      <span aria-hidden="true">•</span>
+      <a href="#">Aviso de Privacidad</a>
+    </nav>
+  
+    <p class="login-footer-direccion">
+      Hotel Óleo Yalmakan, Blvd. Kukulcan km 19.5, Zona Hotelera,
+      77500 Cancún, Quintana Roo
+    </p>
+  
+    <p class="login-footer-derechos">
+      ® 2027 Loyalty Destination Club, S.A. de C.V.
+      Todos los derechos reservados.
+    </p>
+  </footer>
 
 
 </body>
