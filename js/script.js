@@ -50,7 +50,7 @@ function search(){
 }
 
 function goHome(){
-  window.location.href = 'index.html';
+  window.location.href = 'https://emmachuche.github.io/loyalty-static-front/';
 }
 
 function goCart(){
